@@ -1,0 +1,7 @@
+{
+  "name": "withredux",
+  "private": true,
+  "dependencies": {
+    "purescript-prelude": "^3.0.0"
+  }
+}
