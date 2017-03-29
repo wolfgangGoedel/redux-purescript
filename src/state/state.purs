@@ -1,12 +1,10 @@
 module App.State where
-    
-  type State = {
-    message :: String
-  }
 
-  data Action
-    = Initial
-  
-  rootReducer :: Action -> State -> State
-  rootReducer _ _ = { message: "Hello" }
-  -- rootReducer Initial s = s
+import Prelude ((+), (-))
+import App.Actions (Action(..))
+import App.Model (State)
+
+rootReducer :: Action -> State -> State
+rootReducer Initial _ = { message: "Hello World", count: 0 }
+rootReducer (Increment x) s = s { count = s.count + x }
+rootReducer (Decrement x) s = s { count = s.count - x }
