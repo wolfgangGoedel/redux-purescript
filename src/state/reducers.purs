@@ -1,4 +1,4 @@
-module App.State where
+module App.Reducers where
 
 import Prelude ((+), (-))
 import App.Actions (Action(..))

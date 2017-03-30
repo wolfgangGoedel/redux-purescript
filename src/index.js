@@ -6,7 +6,7 @@ import App from './App';
 import './index.css';
 
 import { Initial } from './state/actions';
-import { rootReducer } from './state/state';
+import { rootReducer } from './state/reducers';
 
 const reduxReducer = (state, action) => (
   state === undefined
